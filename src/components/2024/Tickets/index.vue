@@ -28,6 +28,26 @@
 								{{ tickets[1].features }}
 							</p>
 						</div>
+						<!-- Noscript content for added SEO -->
+<noscript><a href="https://powsummit2024.eventbrite.ca" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-901458806557" type="button">Buy Tickets</button>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '901458806557',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-901458806557',
+        onOrderComplete: exampleCallback
+    });
+</script>
 						<a :href="tickets[1].buy_ticket_link" target="_parent">
 							<button>GET TICKETS</button>
 						</a>
