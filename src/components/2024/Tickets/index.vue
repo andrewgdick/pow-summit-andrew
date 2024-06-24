@@ -28,6 +28,28 @@
 								{{ tickets[1].features }}
 							</p>
 						</div>
+
+<div id="eventbrite-widget-container-901458806557"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '901458806557',
+        iframeContainerId: 'eventbrite-widget-container-901458806557',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
+
 						<a :href="tickets[1].buy_ticket_link" target="_parent">
 							<button>GET TICKETS</button>
 						</a>
