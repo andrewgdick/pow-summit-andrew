@@ -22,6 +22,8 @@
 					</a>
 			<a target="_blank" href="https://citrea.xyz/">
 						<img src="@/assets/images/citrea-logo_white.png" alt="citrea" />
+				<a target="_blank" href="https://evertas.com/">
+						<img src="@/assets/images/evertas-logo.svg" alt="evertas" />
 					</a>
 				</div>
 			</div>
